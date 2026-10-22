@@ -8,7 +8,7 @@ Yes. Eigent describes itself as an open-source Cowork desktop application, and i
 
 ## Can I self-host Kortix, and is self-hosting free?
 
-Yes. Kortix self-hosts as one Docker Compose stack on a Linux box you control, and self-host is free. The stack pulls its images from docker.io, so the box needs outbound internet, and the instance must be reachable so an agent's sandbox can call back. Agent sessions run on a separate sandbox provider, with Daytona as the default.
+Yes. Kortix self-hosts as one Docker Compose stack on a Linux box you control, and self-host is free. The stack pulls its images from docker.io, so the box needs outbound internet, and the instance must be reachable so an agent's sandbox can call back. Agent sessions run on a separate sandbox provider, with Platinum as the default.
 
 ## What does a team gain from Kortix over a desktop Cowork app?
 
@@ -16,7 +16,7 @@ A team gets one repo that holds every agent, skill, memory file, and connector, 
 
 ## Where do agent sessions run when I self-host Kortix?
 
-Agent sessions run on a separate sandbox provider, not on the stack you host. The default is Daytona; Platinum and E2B are also supported. Each session gets its own isolated sandbox and its own branch, and the self-hosted instance must be reachable so the sandbox can call back to it.
+Agent sessions run on a separate sandbox provider, not on the stack you host. Platinum is the default; Daytona remains available as a legacy fallback. Each session gets its own isolated sandbox and its own branch, and the self-hosted instance must be reachable so the sandbox can call back to it.
 
 ## Do I need a domain to self-host Kortix?
 
