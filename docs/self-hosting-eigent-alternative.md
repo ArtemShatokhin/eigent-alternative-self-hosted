@@ -13,7 +13,7 @@ Plan for these pieces. Kortix self-hosts as one Docker Compose stack, but a few 
 - Outbound internet. `kortix self-host start` pulls its images from docker.io, so the box needs to reach the internet.
 - A reachable instance, so a session's sandbox can call back to it. Set this up before you expect agents to run.
 - A domain for production, or a tunnel for evaluation. Point an A/AAAA record at the box and open ports 80 and 443, or use the Cloudflare tunnel option.
-- A sandbox provider for sessions. Agent sessions run on a separate provider, not on the stack you host. The default is Daytona; Platinum and E2B are also supported.
+- A sandbox provider for sessions. Agent sessions run on a separate provider, not on the stack you host. Platinum is the default; Daytona remains available as a legacy fallback.
 - A git host for your project repo. GitHub connects in the dashboard under Settings, then Git.
 - A model key. Bring your own, or connect the ChatGPT plan you already pay for, or sign in with your OpenCode Console account.
 
