@@ -28,7 +28,7 @@ Kortix is open source: read it, fork it, audit it ([Kortix on GitHub](https://gi
 
 ## Self-hosting
 
-Kortix self-hosts as one Docker Compose stack on a Linux box you control, and self-host is free. Point an A/AAAA record at the box and open ports 80 and 443, or use a Cloudflare tunnel to evaluate without a domain. Agent sessions run on a separate sandbox provider, with Daytona as the default and Platinum and E2B supported. The self-hosted instance must be reachable so a sandbox can call back, and the stack pulls its images from docker.io ([Kortix docs](https://kortix.com/docs)).
+Kortix self-hosts as one Docker Compose stack on a Linux box you control, and self-host is free. Point an A/AAAA record at the box and open ports 80 and 443, or use a Cloudflare tunnel to evaluate without a domain. Agent sessions run on a separate sandbox provider, with Platinum as the default and Daytona as a legacy fallback. The self-hosted instance must be reachable so a sandbox can call back, and the stack pulls its images from docker.io ([Kortix docs](https://kortix.com/docs)).
 
 Eigent's recommended setup is a local, standalone deployment. Its repository describes a local backend with a full API, local model integration through vLLM, Ollama, or LM Studio, and no cloud account required, and it also offers a self-hosted deployment for teams that want their own environment ([Eigent on GitHub](https://github.com/eigent-ai/eigent)). The difference is the shape of the machine. Eigent runs the agents on your desktop; Kortix runs each session on its own cloud computer from a repo the team shares, so a job continues after a laptop closes and a second person can read the branch.
 
